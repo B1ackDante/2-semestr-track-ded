@@ -1,0 +1,282 @@
+\hypertarget{binary__operators_8cpp}{}\section{binary\+\_\+operators.\+cpp File Reference}
+\label{binary__operators_8cpp}\index{binary\+\_\+operators.\+cpp@{binary\+\_\+operators.\+cpp}}
+
+
+class description file vector  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{binary__operators_8cpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename data $>$ }\\\hyperlink{classVector}{Vector}$<$ data $>$ \hyperlink{binary__operators_8cpp_a8c8eb33fc89878de6c7a2d869e451482}{operator+} (const \hyperlink{classVector}{Vector}$<$ data $>$ \&v1, const \hyperlink{classVector}{Vector}$<$ data $>$ \&v2)  throw (\+Den\+Exception)
+\begin{DoxyCompactList}\small\item\em operator \hyperlink{classVector}{Vector} + \hyperlink{classVector}{Vector} \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename data $>$ }\\\hyperlink{classVector}{Vector}$<$ data $>$ \hyperlink{binary__operators_8cpp_a3ca69957de672a02ef4d157935f767f4}{operator-\/} (const \hyperlink{classVector}{Vector}$<$ data $>$ \&v1, const \hyperlink{classVector}{Vector}$<$ data $>$ \&v2)  throw (\+Den\+Exception)
+\begin{DoxyCompactList}\small\item\em operator \hyperlink{classVector}{Vector} -\/ \hyperlink{classVector}{Vector} \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename data $>$ }\\\hyperlink{classVector}{Vector}$<$ data $>$ \hyperlink{binary__operators_8cpp_a4c9a4f60cd2206296324dfef954befbc}{operator$\ast$} (const \hyperlink{classVector}{Vector}$<$ data $>$ \&v1, double num)  throw (\+Den\+Exception)
+\begin{DoxyCompactList}\small\item\em operator \hyperlink{classVector}{Vector} $\ast$ const \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename data $>$ }\\\hyperlink{classVector}{Vector}$<$ data $>$ \hyperlink{binary__operators_8cpp_ad4e34c29cad6934dee13b462a132d067}{operator$\ast$} (double num, const \hyperlink{classVector}{Vector}$<$ data $>$ \&v1)  throw (\+Den\+Exception)
+\begin{DoxyCompactList}\small\item\em operator const $\ast$ \hyperlink{classVector}{Vector} \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename data $>$ }\\\hyperlink{classVector}{Vector}$<$ data $>$ \hyperlink{binary__operators_8cpp_a5650565de6a917334f6c6b149264567d}{operator/} (const \hyperlink{classVector}{Vector}$<$ data $>$ \&v1, double num)  throw (\+Den\+Exception)
+\begin{DoxyCompactList}\small\item\em operator \hyperlink{classVector}{Vector} / const \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename data $>$ }\\std\+::ostream \& \hyperlink{binary__operators_8cpp_a5e10d56f7663035c54015f1264204212}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classVector}{Vector}$<$ data $>$ \&v1)
+\begin{DoxyCompactList}\small\item\em output operator  print \hyperlink{classVector}{Vector} to os stream \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class description file vector 
+
+\begin{DoxyAuthor}{Author}
+Den 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+March 2019 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{binary__operators_8cpp_a4c9a4f60cd2206296324dfef954befbc}\label{binary__operators_8cpp_a4c9a4f60cd2206296324dfef954befbc}} 
+\index{binary\+\_\+operators.\+cpp@{binary\+\_\+operators.\+cpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!binary\+\_\+operators.\+cpp@{binary\+\_\+operators.\+cpp}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+\hyperlink{classVector}{Vector}$<$data$>$ operator$\ast$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector}{Vector}$<$ data $>$ \&}]{v1,  }\item[{double}]{num }\end{DoxyParamCaption}) throw  Den\+Exception) }
+
+
+
+operator \hyperlink{classVector}{Vector} $\ast$ const 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em v1} & Vector1 \\
+\hline
+\mbox{\tt in}  & {\em num} & const \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result \hyperlink{classVector}{Vector} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 66 of file binary\+\_\+operators.\+cpp.
+
+
+\begin{DoxyCode}
+67     \{
+68         \hyperlink{classVector}{Vector<data>} copy(v1.\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}());
+69 
+70         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < v1.\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}(); i++) copy[i] = v1[i] * num;
+71 
+72         \textcolor{keywordflow}{return} copy;
+73     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{binary__operators_8cpp_ad4e34c29cad6934dee13b462a132d067}\label{binary__operators_8cpp_ad4e34c29cad6934dee13b462a132d067}} 
+\index{binary\+\_\+operators.\+cpp@{binary\+\_\+operators.\+cpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!binary\+\_\+operators.\+cpp@{binary\+\_\+operators.\+cpp}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+\hyperlink{classVector}{Vector}$<$data$>$ operator$\ast$ (\begin{DoxyParamCaption}\item[{double}]{num,  }\item[{const \hyperlink{classVector}{Vector}$<$ data $>$ \&}]{v1 }\end{DoxyParamCaption}) throw  Den\+Exception) }
+
+
+
+operator const $\ast$ \hyperlink{classVector}{Vector} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em num} & const \\
+\hline
+\mbox{\tt in}  & {\em v1} & Vector1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result \hyperlink{classVector}{Vector} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 86 of file binary\+\_\+operators.\+cpp.
+
+
+\begin{DoxyCode}
+87     \{
+88         \textcolor{keywordflow}{return} v1 * num;
+89     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{binary__operators_8cpp_a8c8eb33fc89878de6c7a2d869e451482}\label{binary__operators_8cpp_a8c8eb33fc89878de6c7a2d869e451482}} 
+\index{binary\+\_\+operators.\+cpp@{binary\+\_\+operators.\+cpp}!operator+@{operator+}}
+\index{operator+@{operator+}!binary\+\_\+operators.\+cpp@{binary\+\_\+operators.\+cpp}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+\hyperlink{classVector}{Vector}$<$data$>$ operator+ (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector}{Vector}$<$ data $>$ \&}]{v1,  }\item[{const \hyperlink{classVector}{Vector}$<$ data $>$ \&}]{v2 }\end{DoxyParamCaption}) throw  Den\+Exception) }
+
+
+
+operator \hyperlink{classVector}{Vector} + \hyperlink{classVector}{Vector} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em v1} & Vector1 \\
+\hline
+\mbox{\tt in}  & {\em v2} & Vector2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result \hyperlink{classVector}{Vector} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 22 of file binary\+\_\+operators.\+cpp.
+
+
+\begin{DoxyCode}
+23     \{
+24         assert(v1.\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}() == v2.\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}());
+25 
+26         \hyperlink{classVector}{Vector<data>} copy(v1.\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}());
+27 
+28         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < v1.\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}(); i++) copy[i] = v1[i] + v2[i];
+29 
+30         \textcolor{keywordflow}{return} copy;
+31     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{binary__operators_8cpp_a3ca69957de672a02ef4d157935f767f4}\label{binary__operators_8cpp_a3ca69957de672a02ef4d157935f767f4}} 
+\index{binary\+\_\+operators.\+cpp@{binary\+\_\+operators.\+cpp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!binary\+\_\+operators.\+cpp@{binary\+\_\+operators.\+cpp}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+\hyperlink{classVector}{Vector}$<$data$>$ operator-\/ (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector}{Vector}$<$ data $>$ \&}]{v1,  }\item[{const \hyperlink{classVector}{Vector}$<$ data $>$ \&}]{v2 }\end{DoxyParamCaption}) throw  Den\+Exception) }
+
+
+
+operator \hyperlink{classVector}{Vector} -\/ \hyperlink{classVector}{Vector} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em v1} & Vector1 \\
+\hline
+\mbox{\tt in}  & {\em v2} & Vector2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result \hyperlink{classVector}{Vector} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 44 of file binary\+\_\+operators.\+cpp.
+
+
+\begin{DoxyCode}
+45     \{
+46         assert(v1.\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}() == v2.\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}());
+47 
+48         \hyperlink{classVector}{Vector<data>} copy(v1.\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}());
+49 
+50         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < v1.\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}(); i++) copy[i] = v1[i] - v2[i];
+51 
+52         \textcolor{keywordflow}{return} copy;
+53     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{binary__operators_8cpp_a5650565de6a917334f6c6b149264567d}\label{binary__operators_8cpp_a5650565de6a917334f6c6b149264567d}} 
+\index{binary\+\_\+operators.\+cpp@{binary\+\_\+operators.\+cpp}!operator/@{operator/}}
+\index{operator/@{operator/}!binary\+\_\+operators.\+cpp@{binary\+\_\+operators.\+cpp}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+\hyperlink{classVector}{Vector}$<$data$>$ operator/ (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector}{Vector}$<$ data $>$ \&}]{v1,  }\item[{double}]{num }\end{DoxyParamCaption}) throw  Den\+Exception) }
+
+
+
+operator \hyperlink{classVector}{Vector} / const 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em v1} & Vector1 \\
+\hline
+\mbox{\tt in}  & {\em num} & const \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result \hyperlink{classVector}{Vector} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 102 of file binary\+\_\+operators.\+cpp.
+
+
+\begin{DoxyCode}
+103     \{
+104         \hyperlink{classVector}{Vector<data>} copy(v1.\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}());
+105 
+106         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < v1.\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}(); i++) copy[i] = v1[i] / num;
+107 
+108         \textcolor{keywordflow}{return} copy;
+109     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{binary__operators_8cpp_a5e10d56f7663035c54015f1264204212}\label{binary__operators_8cpp_a5e10d56f7663035c54015f1264204212}} 
+\index{binary\+\_\+operators.\+cpp@{binary\+\_\+operators.\+cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!binary\+\_\+operators.\+cpp@{binary\+\_\+operators.\+cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{classVector}{Vector}$<$ data $>$ \&}]{v1 }\end{DoxyParamCaption})}
+
+
+
+output operator  print \hyperlink{classVector}{Vector} to os stream 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em os} & print stream \\
+\hline
+\mbox{\tt in}  & {\em v1} & \hyperlink{classVector}{Vector} to print \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 122 of file binary\+\_\+operators.\+cpp.
+
+
+\begin{DoxyCode}
+123     \{
+124         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < v1.\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}(); ++i)
+125             os << v1[i] << \textcolor{charliteral}{' '};
+126         \textcolor{keywordflow}{return} os;
+127     \}
+\end{DoxyCode}

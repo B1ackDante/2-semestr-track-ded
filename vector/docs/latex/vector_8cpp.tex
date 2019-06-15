@@ -1,0 +1,86 @@
+\hypertarget{vector_8cpp}{}\section{vector.\+cpp File Reference}
+\label{vector_8cpp}\index{vector.\+cpp@{vector.\+cpp}}
+
+
+class description file vector  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}den\+\_\+exception/den\+\_\+exception.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}bool\+\_\+vector.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}binary\+\_\+operators.\+cpp\char`\"{}}\newline
+Include dependency graph for vector.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vector_8cpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{vector_8cpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classVector}{Vector$<$ data $>$}
+\begin{DoxyCompactList}\small\item\em Type \hyperlink{classVector}{Vector}. Effective in speed, but spends a lot of memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{vector_8cpp_a0e56521e7ab51dee5a9705e070406265}\label{vector_8cpp_a0e56521e7ab51dee5a9705e070406265}} 
+\#define {\bfseries V\+E\+C\+T\+O\+R\+\_\+H}
+\item 
+\mbox{\Hypertarget{vector_8cpp_a0881bd0885196a40e66cc0f9ff435723}\label{vector_8cpp_a0881bd0885196a40e66cc0f9ff435723}} 
+\#define {\bfseries D\+E\+N\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}(message,  exc\+\_\+code)~Den\+Exception(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+func\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, message, exc\+\_\+code)
+\item 
+\mbox{\Hypertarget{vector_8cpp_ab6bca16ed021b1e211fde8669758f199}\label{vector_8cpp_ab6bca16ed021b1e211fde8669758f199}} 
+\#define {\bfseries N\+EW}~new(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+func\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, memory\+\_\+leak)
+\item 
+\#define {\bfseries D\+E\+L\+E\+TE}(x)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{vector_8cpp_aba3799ff09b5cbeeb120156b2c804ca8}\label{vector_8cpp_aba3799ff09b5cbeeb120156b2c804ca8}} 
+std\+::ofstream {\bfseries memory\+\_\+leak} (\char`\"{}memory\+\_\+leak/memory\+\_\+leak.\+txt\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class description file vector 
+
+\begin{DoxyAuthor}{Author}
+Den 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+March 2019 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vector_8cpp_a9f91c27f0bcb26ae76eb4d51e5a0aca5}\label{vector_8cpp_a9f91c27f0bcb26ae76eb4d51e5a0aca5}} 
+\index{vector.\+cpp@{vector.\+cpp}!D\+E\+L\+E\+TE@{D\+E\+L\+E\+TE}}
+\index{D\+E\+L\+E\+TE@{D\+E\+L\+E\+TE}!vector.\+cpp@{vector.\+cpp}}
+\subsubsection{\texorpdfstring{D\+E\+L\+E\+TE}{DELETE}}
+{\footnotesize\ttfamily \#define D\+E\+L\+E\+TE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+memory\_leak << \textcolor{stringliteral}{"D "} << \_\_FILE\_\_ << \textcolor{stringliteral}{"|"} << \_\_func\_\_ << \textcolor{stringliteral}{"|"} << \_\_LINE\_\_ << \textcolor{stringliteral}{" "} << x << std::endl; \(\backslash\)
+                delete x;
+\end{DoxyCode}
+
+
+Definition at line 504 of file vector.\+cpp.
+

@@ -1,0 +1,747 @@
+\hypertarget{classVector}{}\section{Vector$<$ data $>$ Class Template Reference}
+\label{classVector}\index{Vector$<$ data $>$@{Vector$<$ data $>$}}
+
+
+Type \hyperlink{classVector}{Vector}. Effective in speed, but spends a lot of memory.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classVector_ae1d85ad40c4838dca7b39d4083a16c8f}\label{classVector_ae1d85ad40c4838dca7b39d4083a16c8f}} 
+\hyperlink{classVector_ae1d85ad40c4838dca7b39d4083a16c8f}{Vector} ()
+\begin{DoxyCompactList}\small\item\em constructor  create a \hyperlink{classVector}{Vector} with size = 0 \end{DoxyCompactList}\item 
+\hyperlink{classVector_aba82b0f3e3fd3d17bf2d19b04a8361b7}{Vector} (int \hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size})  throw (\+Den\+Exception)
+\begin{DoxyCompactList}\small\item\em constructor  creates a vector with a defined size \end{DoxyCompactList}\item 
+\hyperlink{classVector_aede0f97bf9e72a66047d90ad8246ded1}{Vector} (int \hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}, int value)  throw (\+Den\+Exception)
+\begin{DoxyCompactList}\small\item\em constructor  creates a vector with a defined size. All numbers in the vector are equal value \end{DoxyCompactList}\item 
+\hyperlink{classVector_a90cdb4e859d9802e381050fa5ef7b1b7}{Vector} (int \hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}, data $\ast$arr)  throw (\+Den\+Exception)
+\begin{DoxyCompactList}\small\item\em constructor  creates a vector with a defined size. Numbers in the vector are equal numbers in the array arr \end{DoxyCompactList}\item 
+\hyperlink{classVector_a7d21adde41c251063fb47f08fc07b870}{Vector} (const \hyperlink{classVector}{Vector} \&arr)  throw (\+Den\+Exception)
+\begin{DoxyCompactList}\small\item\em copy constructor  deeply copies one vector to another \end{DoxyCompactList}\item 
+\hyperlink{classVector_a729b947a5289bca0be614283775f0442}{Vector} (\hyperlink{classVector}{Vector} \&\&arr)  throw (\+Den\+Exception)
+\begin{DoxyCompactList}\small\item\em move constructor  superficially copies the temporary vector \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVector_afc7759d16cde34ac4a776b501906e0b0}\label{classVector_afc7759d16cde34ac4a776b501906e0b0}} 
+\hyperlink{classVector_afc7759d16cde34ac4a776b501906e0b0}{$\sim$\+Vector} ()
+\begin{DoxyCompactList}\small\item\em destructor  free \hyperlink{classVector}{Vector} \end{DoxyCompactList}\item 
+data \& \hyperlink{classVector_ad3af3ead835defe8350ec5ddb68d225b}{operator\mbox{[}$\,$\mbox{]}} (int index) const  throw (\+Den\+Exception)
+\begin{DoxyCompactList}\small\item\em index operator  returns the value of an item by its index \end{DoxyCompactList}\item 
+\hyperlink{classVector}{Vector} \& \hyperlink{classVector_adbc0fdf77e48a52048cb1a4bfc2393cc}{operator=} (const \hyperlink{classVector}{Vector} \&vector)  throw (\+Den\+Exception)
+\begin{DoxyCompactList}\small\item\em copy operator  deeply copies one vector to another \end{DoxyCompactList}\item 
+\hyperlink{classVector}{Vector} \& \hyperlink{classVector_a68301f908c4a063eb44487500480d314}{operator=} (\hyperlink{classVector}{Vector} \&\&vector)  throw (\+Den\+Exception)
+\begin{DoxyCompactList}\small\item\em move operator  superficially copies the temporary vector \end{DoxyCompactList}\item 
+void \hyperlink{classVector_a8e34f2f9943752507540bc80dba453fd}{push\+\_\+back} (data elem)  throw (\+Den\+Exception)
+\begin{DoxyCompactList}\small\item\em push  inserts an element at the end of a \hyperlink{classVector}{Vector} \end{DoxyCompactList}\item 
+data \hyperlink{classVector_af58fb997ed40663eb1e9f17b96cbc846}{pop\+\_\+back} (void)  throw (\+Den\+Exception)
+\begin{DoxyCompactList}\small\item\em pop  returns an element from the end of a \hyperlink{classVector}{Vector} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVector_a9a4aa65c1485541c654f3917cc4d37e9}\label{classVector_a9a4aa65c1485541c654f3917cc4d37e9}} 
+void \hyperlink{classVector_a9a4aa65c1485541c654f3917cc4d37e9}{clear} (void)
+\begin{DoxyCompactList}\small\item\em clear \hyperlink{classVector}{Vector} \end{DoxyCompactList}\item 
+int \hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size} (void) const
+\item 
+bool \hyperlink{classVector_ae203aae4d9a6dbabd4883c9e6fd84f79}{empty} (void)
+\begin{DoxyCompactList}\small\item\em checks if \hyperlink{classVector}{Vector} is empty \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{classVector_a9c18dedab606f55fd10516de05efe05e}{operator new} (size\+\_\+t \hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}, const char $\ast$file, const char $\ast$func, int line, std\+::ofstream \&os)
+\begin{DoxyCompactList}\small\item\em operator N\+EW  Made to check for memory leaks. Prints detailed information about its use in a file. \end{DoxyCompactList}\item 
+void \hyperlink{classVector_a7994afefee442d3980f1b1125152fe50}{operator delete} (void $\ast$pointer)
+\begin{DoxyCompactList}\small\item\em operator D\+E\+L\+E\+TE  Made to check for memory leaks. Prints detailed information about its use in a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classVector_afa2a3c5660a7a34794975a6bb80d175f}{increase} ()  throw ()
+\begin{DoxyCompactList}\small\item\em increases buffer  increases buffer by cap\+\_\+increase, if there is not enough space \end{DoxyCompactList}\item 
+bool \hyperlink{classVector_a770a5b403dcb82ea6954cda918d278d6}{decrease} ()  throw ()
+\begin{DoxyCompactList}\small\item\em decrease buffer  decrease buffer by cap\+\_\+decrease, if a lot of free space \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classVector_a22db58ae9e92c6014e8ac657804a035a}\label{classVector_a22db58ae9e92c6014e8ac657804a035a}} 
+data $\ast$ \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\+\_\+}
+\begin{DoxyCompactList}\small\item\em pointer to data buffer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVector_a3c70fa478530a90177f2a7e7621ee688}\label{classVector_a3c70fa478530a90177f2a7e7621ee688}} 
+int \hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\+\_\+}
+\begin{DoxyCompactList}\small\item\em number of elements in the buffer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVector_ad75911bb39018821f0e2911b6905b7ec}\label{classVector_ad75911bb39018821f0e2911b6905b7ec}} 
+int \hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\+\_\+}
+\begin{DoxyCompactList}\small\item\em buffer capacity \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVector_ae612684de42f3ecdefd867b54d232647}\label{classVector_ae612684de42f3ecdefd867b54d232647}} 
+double \hyperlink{classVector_ae612684de42f3ecdefd867b54d232647}{cap\+\_\+increase} = 2.\+0
+\begin{DoxyCompactList}\small\item\em buffer increase ratio \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVector_a7c1b2a56c4404a51eeb97e33ec0ca528}\label{classVector_a7c1b2a56c4404a51eeb97e33ec0ca528}} 
+double \hyperlink{classVector_a7c1b2a56c4404a51eeb97e33ec0ca528}{cap\+\_\+decrease} = 0.\+5
+\begin{DoxyCompactList}\small\item\em buffer decrease ratio \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename data$>$\newline
+class Vector$<$ data $>$}
+
+Type \hyperlink{classVector}{Vector}. Effective in speed, but spends a lot of memory. 
+
+Definition at line 25 of file vector.\+cpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVector_aba82b0f3e3fd3d17bf2d19b04a8361b7}\label{classVector_aba82b0f3e3fd3d17bf2d19b04a8361b7}} 
+\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+\hyperlink{classVector}{Vector}$<$ data $>$\+::\hyperlink{classVector}{Vector} (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption}) throw  Den\+Exception) }
+
+
+
+constructor  creates a vector with a defined size 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em size} & size of \hyperlink{classVector}{Vector} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 153 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+154     \{
+155         \hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_} = \hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size};
+156         \hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_} = \hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}*\hyperlink{classVector_ae612684de42f3ecdefd867b54d232647}{cap\_increase};
+157 
+158         \textcolor{keywordflow}{try}
+159             \{
+160                 \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_} = (data*) calloc(\hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_}, \textcolor{keyword}{sizeof}(data));
+161                 \textcolor{keywordflow}{if}(\hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_} == NULL)
+162                     \textcolor{keywordflow}{throw}(DEN\_EXCEPTION(\textcolor{stringliteral}{"Calloc memory error!!!"}, 
+      DenException::exception\_code\_e::DONT\_HAVE\_MEMORY));
+163             \}
+164         \textcolor{keywordflow}{catch}(DenException& except)
+165             \{
+166                 \textcolor{keywordflow}{throw};
+167             \}
+168     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVector_aede0f97bf9e72a66047d90ad8246ded1}\label{classVector_aede0f97bf9e72a66047d90ad8246ded1}} 
+\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+\hyperlink{classVector}{Vector}$<$ data $>$\+::\hyperlink{classVector}{Vector} (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{int}]{value }\end{DoxyParamCaption}) throw  Den\+Exception) }
+
+
+
+constructor  creates a vector with a defined size. All numbers in the vector are equal value 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em size} & size of \hyperlink{classVector}{Vector} \\
+\hline
+\mbox{\tt in}  & {\em value} & the value that fills the \hyperlink{classVector}{Vector} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 178 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+179     \{
+180         \hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_} = \hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size};
+181         \hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_} = \hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}*\hyperlink{classVector_ae612684de42f3ecdefd867b54d232647}{cap\_increase};
+182 
+183         \textcolor{keywordflow}{try}
+184             \{
+185                 \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_} = (data*) calloc(\hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_}, \textcolor{keyword}{sizeof}(data));
+186                 \textcolor{keywordflow}{if}(\hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_} == NULL)
+187                     \textcolor{keywordflow}{throw}(DEN\_EXCEPTION(\textcolor{stringliteral}{"Calloc memory error!!!"}, 
+      DenException::exception\_code\_e::DONT\_HAVE\_MEMORY));
+188             \}
+189         \textcolor{keywordflow}{catch}(DenException& except)
+190             \{
+191                 \textcolor{keywordflow}{throw};
+192             \}
+193 
+194         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}; i++)
+195             \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}[i] = value;
+196     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVector_a90cdb4e859d9802e381050fa5ef7b1b7}\label{classVector_a90cdb4e859d9802e381050fa5ef7b1b7}} 
+\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+\hyperlink{classVector}{Vector}$<$ data $>$\+::\hyperlink{classVector}{Vector} (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{data $\ast$}]{arr }\end{DoxyParamCaption}) throw  Den\+Exception) }
+
+
+
+constructor  creates a vector with a defined size. Numbers in the vector are equal numbers in the array arr 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em size} & size of \hyperlink{classVector}{Vector} \\
+\hline
+\mbox{\tt in}  & {\em arr} & array that fills the \hyperlink{classVector}{Vector} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 206 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+207     \{
+208         \hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_} = \hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size};
+209         \hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_} = \hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}*\hyperlink{classVector_ae612684de42f3ecdefd867b54d232647}{cap\_increase};
+210 
+211         \textcolor{keywordflow}{try}
+212             \{
+213                 \textcolor{keywordflow}{if}(arr == NULL)
+214                     \textcolor{keywordflow}{throw}(DEN\_EXCEPTION(\textcolor{stringliteral}{"Array pointer is NULL!!!"}, 
+      DenException::exception\_code\_e::NULL\_POINTER));
+215 
+216                 \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_} = (data*) calloc(\hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_}, \textcolor{keyword}{sizeof}(data));
+217 
+218                 \textcolor{keywordflow}{if}(\hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_} == NULL)
+219                     \textcolor{keywordflow}{throw}(DEN\_EXCEPTION(\textcolor{stringliteral}{"Calloc memory error!!!"}, 
+      DenException::exception\_code\_e::DONT\_HAVE\_MEMORY));
+220             \}
+221         \textcolor{keywordflow}{catch}(DenException& except)
+222             \{
+223                 \textcolor{keywordflow}{throw};
+224             \}
+225 
+226         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}; i++)
+227             \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}[i] = arr[i];
+228     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVector_a7d21adde41c251063fb47f08fc07b870}\label{classVector_a7d21adde41c251063fb47f08fc07b870}} 
+\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+\hyperlink{classVector}{Vector}$<$ data $>$\+::\hyperlink{classVector}{Vector} (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector}{Vector}$<$ data $>$ \&}]{vec }\end{DoxyParamCaption}) throw  Den\+Exception) }
+
+
+
+copy constructor  deeply copies one vector to another 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \hyperlink{classVector}{Vector}} & copy \hyperlink{classVector}{Vector} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 237 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+238     \{
+239         \hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_} = vec.\hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_};
+240         \hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_} = \hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_}*\hyperlink{classVector_ae612684de42f3ecdefd867b54d232647}{cap\_increase};
+241 
+242         \textcolor{keywordflow}{try}
+243             \{
+244                 \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_} = (data*) calloc(\hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_}, \textcolor{keyword}{sizeof}(data));
+245 
+246                 \textcolor{keywordflow}{if}(\hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_} == NULL)
+247                     \textcolor{keywordflow}{throw}(DEN\_EXCEPTION(\textcolor{stringliteral}{"Calloc memory error!!!"}, 
+      DenException::exception\_code\_e::DONT\_HAVE\_MEMORY));
+248             \}
+249         \textcolor{keywordflow}{catch}(DenException& except)
+250             \{
+251                 \textcolor{keywordflow}{throw};
+252             \}
+253 
+254         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < vec.\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}(); i++)
+255             \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}[i] = vec.\hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}[i];
+256 
+257         std::cout << \textcolor{stringliteral}{"copy construct"} << std::endl;
+258     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVector_a729b947a5289bca0be614283775f0442}\label{classVector_a729b947a5289bca0be614283775f0442}} 
+\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+\hyperlink{classVector}{Vector}$<$ data $>$\+::\hyperlink{classVector}{Vector} (\begin{DoxyParamCaption}\item[{\hyperlink{classVector}{Vector}$<$ data $>$ \&\&}]{vec }\end{DoxyParamCaption}) throw  Den\+Exception) }
+
+
+
+move constructor  superficially copies the temporary vector 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \hyperlink{classVector}{Vector}} & copy \hyperlink{classVector}{Vector} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 267 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+268         \{
+269             \hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_} = vec.\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}();
+270             \hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_} = \hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_}*\hyperlink{classVector_ae612684de42f3ecdefd867b54d232647}{cap\_increase};
+271             \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_} = vec.\hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_};
+272 
+273             vec.\hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_} = 0;
+274             vec.\hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_} = NULL;
+275 
+276             std::cout << \textcolor{stringliteral}{"move construct"} << std::endl;
+277         \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classVector_a770a5b403dcb82ea6954cda918d278d6}\label{classVector_a770a5b403dcb82ea6954cda918d278d6}} 
+\index{Vector@{Vector}!decrease@{decrease}}
+\index{decrease@{decrease}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{decrease()}{decrease()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+bool \hyperlink{classVector}{Vector}$<$ data $>$\+::decrease (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throw  ) \hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+decrease buffer  decrease buffer by cap\+\_\+decrease, if a lot of free space 
+
+\begin{DoxyReturn}{Returns}
+true if decrease success false if decrease error 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+109     \{
+110         \textcolor{keywordflow}{try}
+111             \{
+112                 data* ptr = (data* )realloc(\hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}, \textcolor{keyword}{sizeof}(data)*
+      \hyperlink{classVector_a7c1b2a56c4404a51eeb97e33ec0ca528}{cap\_decrease}*\hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_});
+113 
+114                 \textcolor{keywordflow}{if}(ptr == NULL)
+115                     \textcolor{keywordflow}{throw} DEN\_EXCEPTION(\textcolor{stringliteral}{"Realloc memory error!!!"}, 
+      DenException::exception\_code\_e::DONT\_HAVE\_MEMORY);
+116 
+117                 \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_} = ptr;
+118                 \hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_} = \hyperlink{classVector_a7c1b2a56c4404a51eeb97e33ec0ca528}{cap\_decrease} * \hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_};
+119 
+120                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+121             \}
+122         \textcolor{keywordflow}{catch}(DenException& except)
+123             \{
+124                 except.where(std::cout);
+125                 except.what(std::cout);
+126                 except.code(std::cout);
+127 
+128                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+129             \}
+130     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVector_ae203aae4d9a6dbabd4883c9e6fd84f79}\label{classVector_ae203aae4d9a6dbabd4883c9e6fd84f79}} 
+\index{Vector@{Vector}!empty@{empty}}
+\index{empty@{empty}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+bool \hyperlink{classVector}{Vector}$<$ data $>$\+::empty (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+checks if \hyperlink{classVector}{Vector} is empty 
+
+\begin{DoxyReturn}{Returns}
+true if \hyperlink{classVector}{Vector} is empty false if \hyperlink{classVector}{Vector} isn\textquotesingle{}t empty 
+\end{DoxyReturn}
+
+
+Definition at line 455 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+456     \{
+457         \textcolor{keywordflow}{return} \hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_} == 0 ? true : \textcolor{keyword}{false};
+458     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVector_afa2a3c5660a7a34794975a6bb80d175f}\label{classVector_afa2a3c5660a7a34794975a6bb80d175f}} 
+\index{Vector@{Vector}!increase@{increase}}
+\index{increase@{increase}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{increase()}{increase()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+bool \hyperlink{classVector}{Vector}$<$ data $>$\+::increase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throw  ) \hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+increases buffer  increases buffer by cap\+\_\+increase, if there is not enough space 
+
+\begin{DoxyReturn}{Returns}
+true if increase success false if increase error 
+\end{DoxyReturn}
+
+
+Definition at line 74 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+75     \{
+76         \textcolor{keywordflow}{try}
+77             \{
+78                 data* ptr = (data* )realloc(\hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}, \textcolor{keyword}{sizeof}(data)*
+      \hyperlink{classVector_ae612684de42f3ecdefd867b54d232647}{cap\_increase}*\hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_});
+79 
+80                 \textcolor{keywordflow}{if}(ptr == NULL)
+81                     \textcolor{keywordflow}{throw} DEN\_EXCEPTION(\textcolor{stringliteral}{"Realloc memory error!!!"}, 
+      DenException::exception\_code\_e::DONT\_HAVE\_MEMORY);
+82 
+83                 \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_} = ptr;
+84                 \hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_} = \hyperlink{classVector_ae612684de42f3ecdefd867b54d232647}{cap\_increase} * \hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_};
+85 
+86                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+87             \}
+88         \textcolor{keywordflow}{catch}(DenException& except)
+89             \{
+90                 except.where(std::cout);
+91                 except.what(std::cout);
+92                 except.code(std::cout);
+93 
+94                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+95             \}
+96     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVector_a7994afefee442d3980f1b1125152fe50}\label{classVector_a7994afefee442d3980f1b1125152fe50}} 
+\index{Vector@{Vector}!operator delete@{operator delete}}
+\index{operator delete@{operator delete}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator delete()}{operator delete()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+void \hyperlink{classVector}{Vector}$<$ data $>$\+::operator delete (\begin{DoxyParamCaption}\item[{void $\ast$}]{pointer }\end{DoxyParamCaption})}
+
+
+
+operator D\+E\+L\+E\+TE  Made to check for memory leaks. Prints detailed information about its use in a file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pointer} & pointer to free data \\
+\hline
+\mbox{\tt in}  & {\em file} & the name of the file from which it is called D\+E\+L\+E\+TE \\
+\hline
+\mbox{\tt in}  & {\em func} & the name of the function from which it is called D\+E\+L\+E\+TE \\
+\hline
+\mbox{\tt in}  & {\em line} & the name of the line from which it is called D\+E\+L\+E\+TE \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 499 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+500     \{
+501         free(pointer);
+502     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVector_a9c18dedab606f55fd10516de05efe05e}\label{classVector_a9c18dedab606f55fd10516de05efe05e}} 
+\index{Vector@{Vector}!operator new@{operator new}}
+\index{operator new@{operator new}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator new()}{operator new()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+void $\ast$ \hyperlink{classVector}{Vector}$<$ data $>$\+::operator new (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size,  }\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{func,  }\item[{int}]{line,  }\item[{std\+::ofstream \&}]{os }\end{DoxyParamCaption})}
+
+
+
+operator N\+EW  Made to check for memory leaks. Prints detailed information about its use in a file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em size} & the number of bytes to initialize \\
+\hline
+\mbox{\tt in}  & {\em file} & the name of the file from which it is called N\+EW \\
+\hline
+\mbox{\tt in}  & {\em func} & the name of the function from which it is called N\+EW \\
+\hline
+\mbox{\tt in}  & {\em line} & the name of the line from which it is called N\+EW \\
+\hline
+\mbox{\tt in}  & {\em os} & information stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the alloсated place in memory 
+\end{DoxyReturn}
+
+
+Definition at line 475 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+476     \{
+477         \textcolor{keywordtype}{void}* pointer = calloc(\hyperlink{classVector_a81b1d973485244101caf8e901b4a03d9}{size}, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{char}));
+478 
+479         os << \textcolor{stringliteral}{"N "} << file << \textcolor{stringliteral}{"|"} << func << \textcolor{stringliteral}{"|"} << line << \textcolor{stringliteral}{" "} << pointer << std::endl;
+480 
+481         \textcolor{keywordflow}{return} pointer;
+482     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVector_adbc0fdf77e48a52048cb1a4bfc2393cc}\label{classVector_adbc0fdf77e48a52048cb1a4bfc2393cc}} 
+\index{Vector@{Vector}!operator=@{operator=}}
+\index{operator=@{operator=}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+\hyperlink{classVector}{Vector}$<$ data $>$ \& \hyperlink{classVector}{Vector}$<$ data $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classVector}{Vector}$<$ data $>$ \&}]{vector }\end{DoxyParamCaption}) throw  Den\+Exception) }
+
+
+
+copy operator  deeply copies one vector to another 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vector} & copy \hyperlink{classVector}{Vector} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 330 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+331     \{
+332         \hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_} = vector.\hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_};
+333         \hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_} = vector.\hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_};
+334 
+335         \textcolor{keywordflow}{try}
+336             \{
+337                 \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_} = (data* )realloc(\hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}, \textcolor{keyword}{sizeof}(vector.
+      \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}));
+338 
+339                 \textcolor{keywordflow}{if}(\hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_} == NULL)
+340                     \textcolor{keywordflow}{throw}(DEN\_EXCEPTION(\textcolor{stringliteral}{"Calloc memory error!!!"}, 
+      DenException::exception\_code\_e::DONT\_HAVE\_MEMORY));
+341             \}
+342         \textcolor{keywordflow}{catch}(DenException& except)
+343             \{
+344                 \textcolor{keywordflow}{throw};
+345             \}
+346 
+347         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < vector.\hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_}; i++) \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}[i] = vector.
+      \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}[i];
+348 
+349         std::cout << \textcolor{stringliteral}{"copy operator ="} << std::endl;
+350 
+351         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+352     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVector_a68301f908c4a063eb44487500480d314}\label{classVector_a68301f908c4a063eb44487500480d314}} 
+\index{Vector@{Vector}!operator=@{operator=}}
+\index{operator=@{operator=}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+\hyperlink{classVector}{Vector}$<$ data $>$ \& \hyperlink{classVector}{Vector}$<$ data $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classVector}{Vector}$<$ data $>$ \&\&}]{vector }\end{DoxyParamCaption}) throw  Den\+Exception) }
+
+
+
+move operator  superficially copies the temporary vector 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vector} & copy \hyperlink{classVector}{Vector} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 361 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+362         \{
+363 
+364             \hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_} = vector.\hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_};
+365             \hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_} = vector.\hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_};
+366             \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_} = vector.\hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_};
+367 
+368             vector.\hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_} = 0;
+369             vector.\hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}= 0;
+370 
+371             std::cout << \textcolor{stringliteral}{"move operator ="} << std::endl;
+372 
+373             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+374         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVector_ad3af3ead835defe8350ec5ddb68d225b}\label{classVector_ad3af3ead835defe8350ec5ddb68d225b}} 
+\index{Vector@{Vector}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+data \& \hyperlink{classVector}{Vector}$<$ data $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const throw  Den\+Exception) }
+
+
+
+index operator  returns the value of an item by its index 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em index} & index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 305 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+306     \{
+307         \textcolor{keywordflow}{try}
+308             \{
+309                 \textcolor{keywordflow}{if}(index >= \hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_})
+310                     \textcolor{keywordflow}{throw}(DEN\_EXCEPTION(\textcolor{stringliteral}{"Index >= Vector size!!!"}, 
+      DenException::exception\_code\_e::ARRAY\_OUT\_OF\_RANGE));
+311             \}
+312         \textcolor{keywordflow}{catch}(DenException& except)
+313             \{
+314                 \textcolor{keywordflow}{throw};
+315             \}
+316 
+317         \textcolor{keywordflow}{return} \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}[index];
+318     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVector_af58fb997ed40663eb1e9f17b96cbc846}\label{classVector_af58fb997ed40663eb1e9f17b96cbc846}} 
+\index{Vector@{Vector}!pop\+\_\+back@{pop\+\_\+back}}
+\index{pop\+\_\+back@{pop\+\_\+back}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{pop\+\_\+back()}{pop\_back()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+data \hyperlink{classVector}{Vector}$<$ data $>$\+::pop\+\_\+back (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) throw  Den\+Exception) }
+
+
+
+pop  returns an element from the end of a \hyperlink{classVector}{Vector} 
+
+\begin{DoxyReturn}{Returns}
+element 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 404 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+405     \{
+406         assert(\hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_} > 0);
+407 
+408         \textcolor{keywordflow}{if}(\hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_} < \hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_} / 4)
+409             \textcolor{keywordflow}{if}(\hyperlink{classVector_a770a5b403dcb82ea6954cda918d278d6}{decrease}() == \textcolor{keyword}{true})  \textcolor{keywordflow}{return} \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}[\hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_}--];
+410             \textcolor{keywordflow}{else}
+411                 \{
+412                     std::cout << \textcolor{stringliteral}{"Decrease error"} << std::endl;
+413                     \textcolor{keywordflow}{return} NULL;
+414                 \}
+415 
+416         \textcolor{keywordflow}{return} \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}[\hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_}--];
+417     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVector_a8e34f2f9943752507540bc80dba453fd}\label{classVector_a8e34f2f9943752507540bc80dba453fd}} 
+\index{Vector@{Vector}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{push\+\_\+back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+void \hyperlink{classVector}{Vector}$<$ data $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{data}]{elem }\end{DoxyParamCaption}) throw  Den\+Exception) }
+
+
+
+push  inserts an element at the end of a \hyperlink{classVector}{Vector} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em elem} & insert element \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Den\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 386 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+387     \{
+388         \textcolor{keywordflow}{if}(\hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_} < \hyperlink{classVector_ad75911bb39018821f0e2911b6905b7ec}{capacity\_}) \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}[\hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_}++] = elem;
+389         \textcolor{keywordflow}{else}
+390             \textcolor{keywordflow}{if}(\hyperlink{classVector_afa2a3c5660a7a34794975a6bb80d175f}{increase}() == \textcolor{keyword}{true})  \hyperlink{classVector_a22db58ae9e92c6014e8ac657804a035a}{buffer\_}[\hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_}++] = elem;
+391             \textcolor{keywordflow}{else}                    std::cout << \textcolor{stringliteral}{"Increase error"} << std::endl;
+392     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVector_a81b1d973485244101caf8e901b4a03d9}\label{classVector_a81b1d973485244101caf8e901b4a03d9}} 
+\index{Vector@{Vector}!size@{size}}
+\index{size@{size}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+int \hyperlink{classVector}{Vector}$<$ data $>$\+::size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classVector}{Vector} size 
+\end{DoxyReturn}
+
+
+Definition at line 441 of file vector.\+cpp.
+
+
+\begin{DoxyCode}
+442     \{
+443         \textcolor{keywordflow}{return} \hyperlink{classVector_a3c70fa478530a90177f2a7e7621ee688}{size\_};
+444     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vector_8cpp}{vector.\+cpp}\end{DoxyCompactItemize}

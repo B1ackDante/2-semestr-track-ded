@@ -1,0 +1,118 @@
+\hypertarget{classArray}{}\section{Array$<$ data $>$ Class Template Reference}
+\label{classArray}\index{Array$<$ data $>$@{Array$<$ data $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classArray_a2a76209eb40074ca13f2925ac9c7097b}{Array} ()
+\item 
+\mbox{\Hypertarget{classArray_a0b4f1f69e4e3e8cebbdeb451d28472f3}\label{classArray_a0b4f1f69e4e3e8cebbdeb451d28472f3}} 
+{\bfseries Array} (int \hyperlink{classArray_a973c8dd45c85cef5571ed106ed1a7860}{size})
+\item 
+\mbox{\Hypertarget{classArray_af7f4b7cd1f5c1158fa7d3820e723ed93}\label{classArray_af7f4b7cd1f5c1158fa7d3820e723ed93}} 
+{\bfseries Array} (int \hyperlink{classArray_a973c8dd45c85cef5571ed106ed1a7860}{size}, int value)
+\item 
+\mbox{\Hypertarget{classArray_a8a04730ac79d860de8e7c75e4492f8c5}\label{classArray_a8a04730ac79d860de8e7c75e4492f8c5}} 
+{\bfseries Array} (int \hyperlink{classArray_a973c8dd45c85cef5571ed106ed1a7860}{size}, data $\ast$arr)
+\item 
+\mbox{\Hypertarget{classArray_a4d104451dc87ecad4b4663dd9124693e}\label{classArray_a4d104451dc87ecad4b4663dd9124693e}} 
+{\bfseries Array} (const \hyperlink{classArray}{Array} \&arr)
+\item 
+\hyperlink{classArray_a29abd12e3f378562dc5f316538d2f8f9}{$\sim$\+Array} ()
+\item 
+data \& \hyperlink{classArray_a67e1907d0309d06863839d2a7f4a5476}{operator\mbox{[}$\,$\mbox{]}} (int index)
+\item 
+\hyperlink{classArray}{Array} \& \hyperlink{classArray_a7b110602f7b7d0a809e0866d5a5a5d3c}{operator=} (const \hyperlink{classArray}{Array} \&array)
+\item 
+void \hyperlink{classArray_a284ec9533533bdf25236033292ca0b3a}{print} (void)
+\item 
+void \hyperlink{classArray_a79e931f2c8837cccfba2932798d60437}{push\+\_\+back} (data elem)
+\item 
+data \hyperlink{classArray_a096d7544dd95195f57f88b0fde76fe68}{pop\+\_\+back} (void)
+\item 
+void \hyperlink{classArray_ae0438c745ed382fecc0467222b1a028b}{clear} (void)
+\item 
+int \hyperlink{classArray_a973c8dd45c85cef5571ed106ed1a7860}{size} (void)
+\item 
+bool \hyperlink{classArray_ad8c05cc24898f72f43fbb16502c82ae8}{empty} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classArray_a2a76209eb40074ca13f2925ac9c7097b}\label{classArray_a2a76209eb40074ca13f2925ac9c7097b}} 
+\index{Array@{Array}!Array@{Array}}
+\index{Array@{Array}!Array@{Array}}
+\subsubsection{\texorpdfstring{Array()}{Array()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+\hyperlink{classArray}{Array}$<$ data $>$\+::\hyperlink{classArray}{Array} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Конструкторы \mbox{\Hypertarget{classArray_a29abd12e3f378562dc5f316538d2f8f9}\label{classArray_a29abd12e3f378562dc5f316538d2f8f9}} 
+\index{Array@{Array}!````~Array@{$\sim$\+Array}}
+\index{````~Array@{$\sim$\+Array}!Array@{Array}}
+\subsubsection{\texorpdfstring{$\sim$\+Array()}{~Array()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+\hyperlink{classArray}{Array}$<$ data $>$\+::$\sim$\hyperlink{classArray}{Array} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Деструктор 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classArray_ae0438c745ed382fecc0467222b1a028b}\label{classArray_ae0438c745ed382fecc0467222b1a028b}} 
+\index{Array@{Array}!clear@{clear}}
+\index{clear@{clear}!Array@{Array}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+void \hyperlink{classArray}{Array}$<$ data $>$\+::clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Очистка \mbox{\Hypertarget{classArray_ad8c05cc24898f72f43fbb16502c82ae8}\label{classArray_ad8c05cc24898f72f43fbb16502c82ae8}} 
+\index{Array@{Array}!empty@{empty}}
+\index{empty@{empty}!Array@{Array}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+bool \hyperlink{classArray}{Array}$<$ data $>$\+::empty (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Пуст ли вектор \mbox{\Hypertarget{classArray_a7b110602f7b7d0a809e0866d5a5a5d3c}\label{classArray_a7b110602f7b7d0a809e0866d5a5a5d3c}} 
+\index{Array@{Array}!operator=@{operator=}}
+\index{operator=@{operator=}!Array@{Array}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+\hyperlink{classArray}{Array}$<$ data $>$ \& \hyperlink{classArray}{Array}$<$ data $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classArray}{Array}$<$ data $>$ \&}]{array }\end{DoxyParamCaption})}
+
+Оператор присваивания \mbox{\Hypertarget{classArray_a67e1907d0309d06863839d2a7f4a5476}\label{classArray_a67e1907d0309d06863839d2a7f4a5476}} 
+\index{Array@{Array}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Array@{Array}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+data \& \hyperlink{classArray}{Array}$<$ data $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+Оператор взятия индекса \mbox{\Hypertarget{classArray_a096d7544dd95195f57f88b0fde76fe68}\label{classArray_a096d7544dd95195f57f88b0fde76fe68}} 
+\index{Array@{Array}!pop\+\_\+back@{pop\+\_\+back}}
+\index{pop\+\_\+back@{pop\+\_\+back}!Array@{Array}}
+\subsubsection{\texorpdfstring{pop\+\_\+back()}{pop\_back()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+data \hyperlink{classArray}{Array}$<$ data $>$\+::pop\+\_\+back (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Выталкивание элемента из конца \mbox{\Hypertarget{classArray_a284ec9533533bdf25236033292ca0b3a}\label{classArray_a284ec9533533bdf25236033292ca0b3a}} 
+\index{Array@{Array}!print@{print}}
+\index{print@{print}!Array@{Array}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+void \hyperlink{classArray}{Array}$<$ data $>$\+::print (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Печать \mbox{\Hypertarget{classArray_a79e931f2c8837cccfba2932798d60437}\label{classArray_a79e931f2c8837cccfba2932798d60437}} 
+\index{Array@{Array}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!Array@{Array}}
+\subsubsection{\texorpdfstring{push\+\_\+back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+void \hyperlink{classArray}{Array}$<$ data $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{data}]{elem }\end{DoxyParamCaption})}
+
+Вставка элемента в конец \mbox{\Hypertarget{classArray_a973c8dd45c85cef5571ed106ed1a7860}\label{classArray_a973c8dd45c85cef5571ed106ed1a7860}} 
+\index{Array@{Array}!size@{size}}
+\index{size@{size}!Array@{Array}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename data $>$ \\
+int \hyperlink{classArray}{Array}$<$ data $>$\+::size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Возвращает размер вектора 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+array.\+cpp\end{DoxyCompactItemize}
